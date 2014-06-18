@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <nav id="navbar" class="navbar clearfix">
+    <nav>
       <ul id="site-navigation">
         <li>
           <a id="home" href="/" class="fa fa-arrow-left">
@@ -38,7 +38,11 @@
           </a>
         </li>
       </ul>
+    </nav>
 
+    {{ content }}
+
+    <nav>
       <ul id='links'>
         <li>
           <a id="github" href="https://github.com/airy" class="fa fa-github">
@@ -52,8 +56,6 @@
         </li>
       </ul>
     </nav>
-
-    {{ content }}
 
   </body>
 </html>
