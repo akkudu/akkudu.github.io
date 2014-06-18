@@ -6,6 +6,9 @@ baseurl: "/"
 url: "http://akkudu.com"
 email: hey@akkudu.com
 
+twitter: akkuducom
+github: akkudu
+
 exclude: ['Gemfile.lock', 'Gemfile']
 
 gems: ['github-pages']
