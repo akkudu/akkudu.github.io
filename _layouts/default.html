@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <meta name="keywords" content="{{ page.tags |  }}" />
+    <meta name="author" content="Andaç Karay Kudu" />
+
+    <meta name="google" value="notranslate">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar clearfix">
+      <ul id="site-navigation">
+        <li>
+          <a id="home" href="/" class="fa fa-arrow-left">
+            {{ site.name }}.com
+          </a>
+        </li>
+        <li>
+          <a id="blog" href='/blog' class='fa fa-list'>
+            blog
+          </a>
+        </li>
+      </ul>
+
+      <ul id='links'>
+        <li>
+          <a id="github" href="https://github.com/airy" class="fa fa-github">
+            airy
+          </a>
+        </li>
+        <li id="twitter">
+          <a href="https://twitter.com/airydragon" class="fa fa-twitter">
+            @airydragon
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    {{ content }}
+
+  </body>
+</html>
