@@ -4,8 +4,8 @@
 
 /* For smaller screens, change all columns to 100% width */
 @media (min-width:1270px) {
-  body > * {
-    width: 1270px;
+  body {
+    width: 80%;
   }
 }
 
@@ -31,14 +31,10 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 
-  width: 70%;
   height: 60%;
   margin: auto;
+  padding: 1em;
 
-  padding-top: 6em;
-}
-
-body {
   text-align: left;
   overflow: auto; /* required - without this, the page layout is screwed up */
 }
@@ -54,20 +50,15 @@ a:hover, a:focus {
   opacity: 1;
 }
 
-.navbar {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+nav {
+  display: inline-block;
   text-transform: lowercase;
   font-weight: 800;
   font-size: 1.2em;
-  padding: 0;
   letter-spacing: 1px;
-  z-index: 10000;
 }
 
-.navbar li {
+nav li {
   font-weight:800;
   display: inline-block;
   margin: 1em;
@@ -75,11 +66,10 @@ a:hover, a:focus {
 
 #site-navigation { float: left; }
 #links { float: right; }
-#index .home { display: none; }
-#index .blog { display: none; }
-#blog .blog { display: none; }
 
-header { margin-top: 4em; }
+header {
+  display: block;
+}
 
 header h1 {
   font-size: 2.5em;
@@ -92,11 +82,4 @@ header quote {
 
   text-shadow: 1px 1px 1px rgba(0,0,0,0.1)
   font-style: italic;
-}
-
-article header {
-  top-margin: 0;
-}
-article header h1 {
-  top-margin: 0;
 }
