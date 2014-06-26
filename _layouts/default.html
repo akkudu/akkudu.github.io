@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
   <head>
     <meta charset="UTF-8" />
+    <meta encoding="TR" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,41 +22,49 @@
     <link rel="stylesheet" type="text/css" href="/css/site.css" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <script src="/js/modernizr.js"></script>
+
     {% include google_tracker.html %}
   </head>
 
   <body>
-    <nav>
-      <ul id="site-navigation">
-        <li>
-          <a id="home" href="/" class="fa fa-arrow-left">
-            {{ site.name }}
-          </a>
-        </li>
-        <li>
-          <a id="blog" href='/blog' class='fa fa-list'>
-            blog
-          </a>
-        </li>
-      </ul>
-    </nav>
 
     {{ content }}
 
-    <nav>
-      <ul id='links'>
-        <li>
-          <a id="github" href="https://github.com/{{site.github}}" class="fa fa-github">
-            {{site.github}}
-          </a>
-        </li>
-        <li id="twitter">
-          <a href="https://twitter.com/{{site.twitter}}" class="fa fa-twitter">
-            @{{site.twitter}}
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="blue-row">
+      <div class="container row-5 mobile-full mobile-row-2 clear font-light">
+        <div class="left col-6 mobile-full mobile-row-2">
+          <h2 class="font-light h3">
+          </h2>
+          <p class="col-11 mobile-full no-margin">
+
+          </p>
+        </div>
+        <div class="col col-11 mobile-full mobile-row-2 mobile-no-gutter">
+          <h2 class="font-light h3">Benimle çalışmak veya sadece tanışmak isterseniz</h2>
+          <p class="col-11 mobile-full no-margin">
+            <a title="@{{ site.twitter }}" href="https://twitter.com/{{ site.twitter }}">tweet</a> atabilir yada
+            <a title="{{ site.email }}" href="mailto:{{ site.email }}">eposta</a> gönderebilirsiniz.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="smoke-row">
+      <div class="container clear">
+        <div class="left text-left mobile-full mobile-text-left">
+          <a title=":)" href="http://www.akkudu.com">Andaç Karay Kudu</a> tarafından,
+
+          <a href="http://jekyllrb.com/">Jekyll</a>,
+          <a href="http://matthewhartman.github.io/base/">Base</a> ve
+          <a href="https://pages.github.com/">Github Pages</a> kullanılarak hazırlanmış ve yayınlanmaktadır.
+        </div>
+      </div>
+    </credits>
+
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/js/default.js"></script>
 
   </body>
 </html>
