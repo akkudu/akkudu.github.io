@@ -1,70 +1,20 @@
 ---
 layout: default
-title: Andaç Karay Kudu
-tags:
-  - system architecture
-  - system design
-  - project management
-  - team management
-  - code quality
-  - refactoring
-  - pair programming
+menu: blog
 ---
 
-<div class="header dark-blue-row">
-  <div class="container row-3 tablet-row-3 mobile-row-1">
-    <div class="clear mobile-text-center">
-      <a href="/" class="logo left mobile-no-float uppercase">akkudu.com</a>
-      <ul class="navigation list-inline right mobile-full mobile-container-full">
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="https://github.com/{{site.github}}">Github</a></li>
-        <li><a href="https://twitter.com/{{site.twitter}}">Twitter</a></li>
-      </ul>
-    </div>
-  </div>
+<section id="posts">
 
-  <div class="container mobile-container-full">
-    <div class="row-2 clear mobile-row">
-      <div class="left col-8 tablet-col-6 mobile-full mobile-container mobile-text-center">
+  {% for post in site.posts %}
+    <article>
+      <a href="{{ post.url }}">
+      <h2>{{ post.title }}</h2>
+      </a>
+      <i>{{ post.author }}, {{ post.date | date_to_string }}</i>
 
-        <h1>Andaç Karay Kudu</h1>
-        <h3>Danışman, Koç, Eğitmen, Programcı</h3>
+      <p>{{ post.excerpt | strip_html }}</p>
+    </article>
 
-        <p class="font-light col-11 tablet-col-12"></p>
-      </div>
-    </div>
-  </div>
-</div>
+  {% endfor %}
 
-<div class="smoke-row benefits-block">
-  <h2 class="sub-heading uppercase"><span>20 yıldan uzun bir süredir üzerinde çalıştığım konular</span></h2>
-
-  <div class="container row-3 font-light">
-      <div class="clear row mobile-row text-center tablet-text-left mobile-text-left">
-        <div class="col col-1-3 mobile-full content-block">
-          <h3 class="h6 font-ultra-bold">Sistem Tasarımı ve Mimarisi</h3>
-          <p>
-            Her sistem, bir amaca uygun olarak tasarlanır ve
-            bu tasarıma göre inşa edilir. Doğru tasarım ve mimari
-            başarıya giden yolu tanımlar.
-          </p>
-        </div>
-        <div class="col col-1-3 mobile-full content-block">
-          <h3 class="h6 font-ultra-bold">Ekip Kültürü ve Proje Yönetimi</h3>
-          <p>
-            Bir sistemi inşa ederken, farklı disiplinlerden uzmanların
-            bir arada, uyumlu ve verimli çalışması; sistemin zamanında
-            ve kriterlere uygun olarak bitirilmesi gereklidir.
-          </p>
-        </div>
-        <div class="col col-1-3 mobile-full content-block">
-          <h3 class="h6 font-ultra-bold">Kod Kalitesi</h3>
-          <p>
-            İnşa ettiğimiz sistemlerin sorunsuz işletilmesi ve inşa
-            sürecinin kolay yürütülmesi kodun kalitesine bağlıdır.
-            Yazılım işinde en önemli nokta yazılımın kalitesidir.
-          </p>
-        </div>
-      </div>
-  </div>
-</div>
+</section>
