@@ -1,0 +1,210 @@
+/*****  COLOR SCHEME ****/
+/*
+  #222930
+  #4EB1BA
+  #E9E9E9
+*/
+
+/*
+  #1B1B1B;
+  #DDD;
+  #6DCFF6;
+*/
+
+
+body {
+  background-color: #222930;
+
+  background-color: #1B1B1B;
+  color: #4EB1BA;
+}
+
+header { border-bottom: 5px solid #4EB1BA; }
+
+h1, h2, h3 { color: #E9E9E9; }
+
+a {
+  color: #E9E9E9;
+  text-decoration: none;
+}
+
+nav a,
+nav a:visited {
+  color: #4EB1BA;
+}
+
+nav a.current,
+nav a:hover {
+  color: #E9E9E9;
+}
+
+
+/*****  GENERAL ****/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin:0;
+  padding:0;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+h3 { margin: 0 0 1em 0; }
+
+a {
+  text-decoration: none;
+}
+
+/*****  HEADING ****/
+
+header {
+  font-family: 'Changa One', sans-serif;
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+h2 {
+  margin: 0;
+}
+
+/**** NAVIGATION  ****/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 400;
+  padding: 15px 10px;
+}
+
+/**** FOOTER  ****/
+
+footer {
+  clear: both;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+
+/**** PAGE: BLOG  ****/
+
+#posts {
+  margin: 0;
+  padding: 0;
+}
+
+#posts a p {
+  color: #4EB1BA;
+}
+
+/**** PAGE: ABOUT ****/
+
+.rounded-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+#testimonials {
+  clear: both;
+}
+
+blockquote {
+  font: 14px/22px normal helvetica, sans-serif;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-left: 5px solid #4EB1BA;
+}
+
+cite {
+  color: #E9E9E9;
+}
+
+quote .person {
+  text-align:right;
+}
+
+
+@media screen and (min-width: 480px) {
+  /***  TWO COLUMN LAYOUT ***/
+  .primary {
+    width: 50%;
+    float: left;
+  }
+
+  .secondary {
+    width: 40%;
+    float: right;
+  }
+
+  /***  PAGE: ABOUT ***/
+  .rounded-photo {
+    float: left;
+    margin: 0 5% 80px 0;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+  #logo h1 { font-size: 2.5em; }
+
+  #logo h2 {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+  }
+
+  header {
+    margin-bottom: 60px;
+  }
+}
