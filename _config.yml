@@ -4,10 +4,6 @@ title: Andaç Karay Kudu | Software Craftsman
 description: "Andaç Karay Kudu - Consultant, Coach, Mentor, Trainer, Pair Programmer"
 baseurl: "/"
 url: "http://akkudu.com"
-email: hey@akkudu.com
-
-twitter: akkuducom
-github: akkudu
 
 exclude: ['Gemfile.lock', 'Gemfile']
 
