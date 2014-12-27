@@ -1,0 +1,17 @@
+<a href="/" id="logo">
+  <h1>Andaç Karay Kudu</h1>
+  <h3>Software Craftsman</h3>
+</a>
+<nav>
+  <ul>
+    <li>
+      <a href="/about.html" class="{% if page.menu == 'about' %}current{% endif %}">About</a>
+    </li>
+    <li>
+      <a href="/" class="{% if page.menu == 'blog' %}current{% endif %}">Blog</a>
+    </li>
+    <li>
+      <a href="/contact.html" class="{% if page.menu == 'contact' %}current{% endif %}">Contact</a>
+    </li>
+  </ul>
+</nav>
