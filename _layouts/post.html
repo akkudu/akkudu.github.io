@@ -8,4 +8,6 @@ menu: blog
   <h5>{{ page.author }}, {{ page.date | date_to_string }}</h5>
 
   {{ content }}
+
+  {% include comments.html %}
 </article>
