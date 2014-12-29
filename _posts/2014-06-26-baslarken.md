@@ -7,6 +7,8 @@ language: Türkçe
 categories: [turkce]
 tags:
     - akkudu.com
+
+github_issue_id: 10
 ---
 
 <cite>

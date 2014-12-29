@@ -19,7 +19,7 @@ body {
   color: #4EB1BA;
 }
 
-header { border-bottom: 5px solid #4EB1BA; }
+body > header { border-bottom: 5px solid #4EB1BA; }
 
 h1, h2, h3 { color: #E9E9E9; }
 
@@ -128,6 +128,29 @@ footer {
 
 #posts a p {
   color: #4EB1BA;
+}
+
+article img {
+  display: block;
+  max-width: 250px;
+  margin: 0 20px 20px 0 ;
+  float: left;
+  border-radius: 10px;
+}
+
+.comment-user {
+  margin-right:10px;
+}
+
+.comment-date {
+  font-size: small;
+  display: inline-block;
+  margin: 0 10px 10px 0 ;
+}
+
+.comment-gravatar {
+  width: 60px;
+  height: 60px;
 }
 
 /**** PAGE: ABOUT ****/

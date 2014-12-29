@@ -12,3 +12,6 @@ gems: ['github-pages']
 # Build settings
 markdown: kramdown
 permalink: none
+
+github:
+  repo: akkudu/akkudu.github.io
