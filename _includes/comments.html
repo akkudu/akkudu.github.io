@@ -1,0 +1,38 @@
+{% if page.github_issue_id %}
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<section id="comments">
+  <header>
+    {% if page.language == "Türkçe" %}
+      <h3>Yorumlar</h3>
+      <p>Yorumlarınız için <a href="https://github.com/{{site.github.repo}}/issues/{{page.github_issue_id}}">bu yazıya ait Github issue sayfasını</a> kullanabilirsiniz.</p>
+    {% else %}
+      <h3>Comments</h3>
+      <p>Visit <a href="https://github.com/{{site.github.repo}}/issues/{{page.github_issue_id}}">this post's issue page on GitHub</a> to add a comment.</p>
+    {% endif %}
+  </header>
+</section>
+
+<script type="text/javascript">
+$.ajax({
+    url: "https://api.github.com/repos/{{site.github.repo}}/issues/{{page.github_issue_id}}/comments"
+  , method: "get"
+  , headers: { Accept: "application/vnd.github.full+json" }
+  , error: function(e){}
+  , success: function(resp){
+      var cuser, cuserlink, clink, cbody, cavatarlink, cdate;
+      for (var i=0; i<resp.length; i++) {
+        cuser = resp[i].user.login;
+        cuserlink = "https://github.com/" + resp[i].user.login;
+        clink = "https://github.com/{{site.github.repo}}/issues/{{page.github_issue_id}}#issuecomment-" + resp[i].url.substring(resp[i].url.lastIndexOf("/")+1);
+        cbody = resp[i].body_html;
+        cavatarlink = resp[i].user.avatar_url;
+        cdate = (new Date(resp[i].created_at)).toLocaleString();
+
+        $("#comments").append('<div class="comment"><div class="comment-header"><a class="comment-user" href="' + cuserlink + '"><img class="comment-gravatar" src="' + cavatarlink + '" alt=""> ' + cuser + '</a><a class="comment-date" href="' + clink + '">' + cdate + '</a></div><div class="comment-body">' + cbody + '</div></div>');
+      }
+    }
+});
+</script>
+{% endif %}
