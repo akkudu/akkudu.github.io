@@ -1,69 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta encoding="TR" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-
-    <meta name="keywords" content="{{ page.tags |  }}" />
-    <meta name="author" content="Andaç Karay Kudu" />
-
-    <meta name="google" value="notranslate">
-
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900&subset=latin,latin-ext">
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <script src="/js/modernizr.js"></script>
-
-    {% include google_tracker.html %}
+    {% include head.html %}
   </head>
-
   <body>
+    <header>
+      {% include header.html %}
+    </header>
 
-    {{ content }}
 
-    <div class="blue-row">
-      <div class="container row-5 mobile-full mobile-row-2 clear font-light">
-        <div class="left col-6 mobile-full mobile-row-2">
-          <h2 class="font-light h3">
-          </h2>
-          <p class="col-11 mobile-full no-margin">
+    <div id="wrapper">
+      {{ page.overview}}
 
-          </p>
-        </div>
-        <div class="col col-11 mobile-full mobile-row-2 mobile-no-gutter">
-          <h2 class="font-light h3">Benimle çalışmak veya sadece tanışmak isterseniz</h2>
-          <p class="col-11 mobile-full no-margin">
-            <a title="@{{ site.twitter }}" href="https://twitter.com/{{ site.twitter }}">tweet</a> atabilir yada
-            <a title="{{ site.email }}" href="mailto:{{ site.email }}">eposta</a> gönderebilirsiniz.
-          </p>
-        </div>
-      </div>
+      {{ content }}
+
+      <footer>
+        <i class="fa fa-copyright"></i> 2014 Andaç Karay Kudu
+        <p>
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/airydragon">@airydragon</a> (Global) |
+          <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/akkuducom">@akkuducom</a> (Turkish)
+        </p>
+      </footer>
     </div>
-
-    <section class="smoke-row">
-      <div class="container clear">
-        <div class="left text-left mobile-full mobile-text-left">
-          <a title=":)" href="http://www.akkudu.com">Andaç Karay Kudu</a> tarafından,
-
-          <a href="http://jekyllrb.com/">Jekyll</a>,
-          <a href="http://matthewhartman.github.io/base/">Base</a> ve
-          <a href="https://pages.github.com/">Github Pages</a> kullanılarak hazırlanmış ve yayınlanmaktadır.
-        </div>
-      </div>
-    </credits>
-
-
-    <script src="/js/jquery-1.11.1.min.js"></script>
-    <script src="/js/default.js"></script>
-
   </body>
 </html>

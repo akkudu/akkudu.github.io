@@ -1,13 +1,9 @@
 # Site settings
 name: akkudu.com
-title: Andaç Karay Kudu ~ Think Simple, Make Incredible | akkudu.com/blog
+title: Andaç Karay Kudu | Software Craftsman
 description: "Andaç Karay Kudu - Consultant, Coach, Mentor, Trainer, Pair Programmer"
 baseurl: "/"
 url: "http://akkudu.com"
-email: hey@akkudu.com
-
-twitter: akkuducom
-github: akkudu
 
 exclude: ['Gemfile.lock', 'Gemfile']
 
@@ -15,4 +11,4 @@ gems: ['github-pages']
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: none

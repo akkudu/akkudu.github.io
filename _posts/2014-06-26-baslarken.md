@@ -7,10 +7,11 @@ language: Türkçe
 categories: [turkce]
 tags:
     - akkudu.com
-
 ---
 
->  Bir şey hakkında herşeyi, herşey hakkında da bir şeyleri bilmek...
+<cite>
+  Bir şey hakkında herşeyi, herşey hakkında da bir şeyleri bilmek...
+</cite>
 
 Merhabalar,
 
