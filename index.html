@@ -8,9 +8,11 @@ menu: blog
   {% for post in site.posts %}
     <article>
       <a href="{{ post.url }}">
-      <h2>{{ post.title }}</h2>
+        <h2>{{ post.title }}</h2>
+        <i>{{ post.date | date: "%F" }}, {{post.language}}</i>
       </a>
-      <i>{{ post.author }}, {{ post.date | date_to_string }}</i>
+
+
 
       <p>{{ post.excerpt | strip_html }}</p>
     </article>
