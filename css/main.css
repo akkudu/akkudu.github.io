@@ -19,7 +19,7 @@ body {
   color: #4EB1BA;
 }
 
-header { border-bottom: 5px solid #4EB1BA; }
+body > header { border-bottom: 5px solid #4EB1BA; }
 
 h1, h2, h3 { color: #E9E9E9; }
 
