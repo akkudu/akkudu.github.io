@@ -2,7 +2,7 @@
 
 <title>{% if page.title %}{{ page.title }}{% endif %} | {{ site.title }}</title>
 <meta name="author" content="Andaç Karay Kudu" />
-<meta name="description" content="{{ site.description }}">
+<meta name="description" content="{% if page.description %}{{ page.description }}{% endif %} | {{ site.description }}">
 <meta name="keywords" content="{{ page.tags }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
