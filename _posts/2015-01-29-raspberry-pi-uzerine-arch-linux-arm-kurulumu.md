@@ -7,7 +7,7 @@ categories: [turkce]
 tags: raspberry-pi, arch linux
 description: Raspberry Pi üzerine Arch Linux Arm Kurulumu
 
-github_issue_id: 17
+github_issue_id: 18
 ---
 
 ![Raspberry Pi Logo](/img/raspberry_pi-logo.jpg)
