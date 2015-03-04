@@ -153,6 +153,10 @@ article img {
   height: 60px;
 }
 
+.comment {
+  clear:both;
+}
+
 /**** PAGE: ABOUT ****/
 
 .rounded-photo {
