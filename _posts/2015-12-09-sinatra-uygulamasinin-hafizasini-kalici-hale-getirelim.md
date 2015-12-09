@@ -11,6 +11,14 @@ Fakat programımız her durdurduğunda hafızası siliniyor. Hafızanın kalıc�
 olmasını sağlamak için bir dosya kullanacağız. Mesajları da [JSON](http://json.org/)
 formatında saklayacağız.
 
+Öncelikle JSON kütüphanesini kuralım.
+
+{% highlight bash %}
+$ gem install json
+{% endhighlight %}
+
+Artık programımızda JSON fonksiyonlarını kullanabiliriz.
+
 {% highlight rb %}
 # file_memory.rb
 require 'sinatra'
