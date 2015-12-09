@@ -17,7 +17,7 @@ formatında saklayacağız.
 $ gem install json
 {% endhighlight %}
 
-Artık programımızda JSON fonksiyonlarını kullanabiliriz.
+Artık uygulamamızda JSON fonksiyonlarını kullanabiliriz.
 
 {% highlight rb %}
 # file_memory.rb
@@ -72,12 +72,11 @@ $ echo [] > messages.json
 
 Yukarıdaki komutu messages.json dosyasını boşaltmak için de kullanabiliriz.
 
-Uygulamamızı çalıştıralım
+Uygulamamızı çalıştıralım.
 
 {% highlight bash %}
 $ ruby file_memory.rb
 {% endhighlight %}
-
 
 #### Sonuç
 
