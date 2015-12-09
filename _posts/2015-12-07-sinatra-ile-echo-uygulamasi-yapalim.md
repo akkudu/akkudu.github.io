@@ -138,6 +138,12 @@ __END__
 </html>
 {% endhighlight %}
 
+Uygulamamızı çalıştıralım.
+
+{% highlight bash %}
+$ ruby echo.rb
+{% endhighlight %}
+
 #### Sonuç
 
 Tabii ki [http://localhost:4567](http://localhost:4567) adresinden
