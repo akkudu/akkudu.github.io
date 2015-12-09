@@ -54,6 +54,12 @@ __END__
 </html>
 {% endhighlight %}
 
+Uygulamamızı çalıştıralım.
+
+{% highlight bash %}
+$ ruby memory.rb
+{% endhighlight %}
+
 #### Sonuç
 
 [http://localhost:4567](http://localhost:4567) adresindeki uygulamamız
